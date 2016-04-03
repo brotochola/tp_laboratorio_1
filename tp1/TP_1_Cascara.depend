@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1459547786 source:e:\utn\programacion_1\tp1_laboratorio\funciones.c
+
+1459547874 source:e:\utn\programacion_1\tp1_laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1459547796 e:\utn\programacion_1\tp1_laboratorio\funciones.h
+
+1459709814 source:g:\utn\programacion_1\tp1_laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1459547796 g:\utn\programacion_1\tp1_laboratorio\funciones.h
+
+1459709376 source:g:\utn\programacion_1\tp1_laboratorio\funciones.c
+
+1459714728 source:c:\utn\programacion i\tp1_laboratorio\funciones.c
+
+1459714790 source:c:\utn\programacion i\tp1_laboratorio\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1459714514 c:\utn\programacion i\tp1_laboratorio\funciones.h
+
+1459714728 source:c:\utn\git\tp1\funciones.c
+
+1459714790 source:c:\utn\git\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1459714514 c:\utn\git\tp1\funciones.h
+
