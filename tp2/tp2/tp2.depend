@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1461672256 source:e:\utn\programacion_1\tp2\tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

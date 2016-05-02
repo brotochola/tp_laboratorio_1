@@ -1,0 +1,242 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define TAM 20
+
+typedef struct {
+
+char* name;
+int age;
+int dni;
+int isEmpty;
+
+} employee;
+
+employee gente[TAM];
+
+
+
+
+
+
+
+int initEmployees(employee* pEmployee, int length)
+{
+    int salida=-1;
+    int i;
+    if (!(pEmployee==NULL || length<1 )) {
+
+        for(i=0;i<length;i++){
+          pEmployee[i].isEmpty=1;
+            salida=0;
+        }
+    }
+
+//  return 0;
+    return salida;
+
+}
+
+int addEmployee(employee* pEmployee, int length,  char name[], int dni )
+{
+
+    int salida=-1;
+    int i;
+    if (!(pEmployee==NULL || length<1  )) {
+
+        for(i=0;i<length;i++){
+           if( pEmployee[i].isEmpty==1 ) {
+
+                 pEmployee[i].dni = dni;
+
+                 strcpy( pEmployee[i].name, name);
+
+                 pEmployee[i].isEmpty=0;
+                 salida=0;
+                break;
+           } //fin if
+
+        } //fin for
+    } //fin if principal
+
+//  return 0;
+    return salida;
+
+
+
+
+}
+
+employee* findEmployeeById(employee* pEmployee, int length, int dni)
+{
+
+    employee* salida;
+    int i;
+    if (!(pEmployee==NULL || length<1 || dni<1)) {
+
+        for(i=0;i<length;i++){
+            if(pEmployee[i].dni==dni){
+                salida=&pEmployee[i];
+                break; //saco el primero y ya
+
+            }else{
+                salida=NULL;
+            }
+
+        }
+    }else{
+        salida=NULL;
+    }
+
+
+return salida;
+
+
+
+
+
+
+}
+
+int removeEmployee(employee* pEmployee, int length, int dni)
+{
+    int salida=-1;
+    int i;
+    if (!(pEmployee==NULL || length<1 || dni<1)) {
+
+        for(i=0;i<length;i++){
+            if(pEmployee[i].dni==dni){
+                pEmployee[i].isEmpty=1;
+                salida=0;
+                break;
+
+            }
+
+        }
+    }
+
+
+return salida;
+}
+
+
+int sortEmployeeByName(employee* pEmployee, int length, int order)
+{
+
+    employee aux;
+    int salida=-1;
+    int i, j;
+    if (!(pEmployee==NULL || length<1 )) {
+        if(order!=0 || order!=1){
+            for(i=0;i<length;i++){
+                for(j=i+1;j<length;j++){
+                    if (order==1){
+                        if(strcmp(pEmployee[i].name, pEmployee[j].name )>0 ){
+                            aux=pEmployee[i];
+                            pEmployee[i] = pEmployee[j] ;
+                            pEmployee[j] = aux;
+
+                        } //fin if strcmp
+                    } else if (order==0){
+                        if(strcmp(pEmployee[i].name, pEmployee[j].name )<0 ){
+                            aux=pEmployee[i];
+                            pEmployee[i] = pEmployee[j] ;
+                            pEmployee[j] = aux;
+
+                        } //fin if strcmp
+                    } //fin if segun order
+                } //fin for j
+
+            }//fin for i
+              salida=0;
+        }//fin if order
+    }//fin if chequeo general
+
+
+
+
+
+
+
+
+    return salida;
+
+
+}
+
+int printEmployees(employee* pEmployee, int length)
+{
+    int i;
+
+    for(i=0; i< length; i++)
+    {
+        if(!pEmployee[i].isEmpty){
+                printf("\n[%d] %d, %s, %d, %d",i,pEmployee[i].dni, pEmployee[i].name, pEmployee[i].age, pEmployee[i].sector );
+        }
+    }
+    return 0;
+}
+
+
+
+
+
+int menu(){
+    int opcion;
+    system('cls');
+    printf("1- agregar persona\n");
+    printf("2- borrar persona\n");
+    printf("3- imprimir ordenando por nombre\n");
+    printf("4- imprimir grafico de edades");
+    printf("5- salir");
+    scanf("%d",&opcion);
+
+
+     switch(opcion)
+        {
+            case 1:
+                agregarPersona();
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+
+        }
+    return 0;
+
+
+}
+
+int agregarPersona(){
+
+    char* nombre;
+    int dni;
+    int devolucion;
+
+  do{
+    printf("nombre:");
+    gets(nombre);
+    printf("nombre:");
+    gets(dni);
+  }while (  addEmployee(gente, TAM,  nombre ,  dni ) == 0);
+
+
+}
+
+
+
+
+
+
+int main()
+{
+    initEmployees(gente, TAM);
+    menu();
+    return 0;
+}
