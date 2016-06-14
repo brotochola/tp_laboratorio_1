@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1464376276 source:g:\utn\tp3\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465247081 source:c:\utn\tp3\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465603475 source:c:\users\alumno.lab5pc03\desktop\tp3\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465852042 source:d:\utn\tp3\tp3\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465853544 source:c:\users\user\desktop\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"tp3.h"
+
+1465853510 c:\users\user\desktop\tp3\tp3.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465853546 source:c:\users\facu\desktop\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"tp3.h"
+
+1465853512 c:\users\facu\desktop\tp3\tp3.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465853546 source:c:\utn\tp3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"tp3.h"
+
+1465919009 c:\utn\tp3\tp3.h
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1465919106 source:c:\utn\tp3\tp3.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tp3.h"
+
