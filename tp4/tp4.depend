@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1465864289 source:c:\users\alumno.lab4pc\desktop\tp4\tp4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"pelis.h"
+
+1465233538 c:\users\alumno.lab4pc\desktop\tp4\tp4\arraylist.h
+
+1465862465 c:\users\alumno.lab4pc\desktop\tp4\tp4\pelis.h
+
+1465864303 source:c:\users\alumno.lab4pc\desktop\tp4\tp4\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"pelis.h"
+
+1465864304 source:d:\utn\tp4\tp4\tp4\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"pelis.h"
+
+1465233538 d:\utn\tp4\tp4\tp4\arraylist.h
+
+1465862466 d:\utn\tp4\tp4\tp4\pelis.h
+
+1466011944 source:g:\utn\tp4\tp4\tp4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"pelis.h"
+
+1465233538 g:\utn\tp4\tp4\tp4\arraylist.h
+
+1465862466 g:\utn\tp4\tp4\tp4\pelis.h
+
+1466009304 source:g:\utn\tp4\tp4\tp4\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"pelis.h"
+
+1466009304 source:g:\utn\tp4\tp4\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"pelis.h"
+
+1465233538 g:\utn\tp4\tp4\arraylist.h
+
+1465862466 g:\utn\tp4\tp4\pelis.h
+
